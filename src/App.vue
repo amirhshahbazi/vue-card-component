@@ -6,7 +6,7 @@
         <button @click="removeBox">remove</button>
       </div>
       <div class="box-grid">
-        <x-box v-for="box in boxes" :id="box.id"></x-box>
+        <x-box v-for="box in boxes" :key="box.id"></x-box>
       </div>
     </div>
   </div>

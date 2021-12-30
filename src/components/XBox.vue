@@ -68,7 +68,7 @@ export default {
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 8px;
+  margin: 30px 8px;
 
   * {
     transition: all 0.7s ease-in-out;
