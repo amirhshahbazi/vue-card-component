@@ -111,7 +111,7 @@ export default {
       &--active {
         background: #4F5BD51F;
         border: none;
-        transform: translate(calc(50% + 16px));
+        transform: translate(calc(50% + 20px));
         a {
           color: $primary !important;
         }
