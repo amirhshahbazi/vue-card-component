@@ -112,6 +112,11 @@ export default {
         background: #4F5BD51F;
         border: none;
         transform: translate(calc(50% + 20px));
+
+        @media only screen and (max-width: 500px) {
+          transform: none;
+          margin: 0 auto;
+        }
         a {
           color: $primary !important;
         }
