@@ -1,29 +1,18 @@
-# xino
+# Xino Digital Technical Challenge 
 
-## Project setup
-```
-npm install
-```
+![](src/assets/xino.svg)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+_____________________________________
 
-### Compiles and minifies for production
+### The project is deployed on Vercel:
+https://xino-vue-challenge.vercel.app/
+
+## Run the project
 ```
-npm run build
+npm i && npm run serve
 ```
 
-### Run your unit tests
+### Run the unit tests (ensures UI works accordingly)
 ```
 npm run test:unit
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

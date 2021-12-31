@@ -1,40 +1,29 @@
 <template>
   <div id="xino">
     <div class="main">
-      <div class="actions">
-        <button @click="addBox">add</button>
-        <button @click="removeBox">remove</button>
-      </div>
-      <div class="box-grid">
-        <x-box v-for="box in boxes" :key="box.id"></x-box>
-      </div>
+      <action-bar @add-box="addBox" @remove-box="removeBox" />
+      <x-box-grid :boxes="boxes" />
     </div>
   </div>
 </template>
 
 <script>
-
-
-import XBox from "./components/XBox";
+import XBoxGrid from "./components/XBoxGrid";
+import ActionBar from "./components/ActionBar";
 export default {
   name: 'App',
-  components: {XBox},
+  components: {ActionBar, XBoxGrid},
   data() {
     return {
-      boxCount: 1,
-    }
-  },
-  computed: {
-    boxes() {
-      return new Array(this.boxCount).fill({id: Math.random()})
+      boxes: [{id: Math.random()}],
     }
   },
   methods: {
     addBox() {
-      ++this.boxCount
+      this.boxes.push({id: Math.random()})
     },
     removeBox() {
-      if (this.boxCount > 1) --this.boxCount
+      this.boxes.pop()
     }
   }
 }
@@ -48,14 +37,6 @@ body, html {
   box-sizing: border-box;
   background: $mainBackground;
   font-family: Arial;
-}
-
-.box-grid {
-  padding: 229px 157px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }
 
 .actions {

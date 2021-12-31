@@ -54,7 +54,6 @@ export default {
   },
   methods: {
     toggleState() {
-      console.log('toggled')
       this.opened = !this.opened
     }
   }
@@ -69,6 +68,7 @@ export default {
   display: flex;
   justify-content: center;
   margin: 30px 8px;
+  width: max-content;
 
   * {
     transition: all 0.7s ease-in-out;
