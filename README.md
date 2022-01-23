@@ -1,6 +1,4 @@
-# Xino Digital Technical Challenge 
-
-![](src/assets/xino.svg)
+# Vue.js card UI component
 
 _____________________________________
 
